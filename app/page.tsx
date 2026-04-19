@@ -1,8 +1,9 @@
 import React from 'react'
+import Home from './component/Home/Home'
 
 const HomePage = () => {
   return (
-    <div className='text-white'>HomePage</div>
+    <Home></Home>
   )
 }
 
