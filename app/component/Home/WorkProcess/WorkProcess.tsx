@@ -12,9 +12,9 @@ const WorkProcess = () => {
             <h1 className='text-3xl md:text-5xl mt-4 font-bold text-center text-black'>Transforming ideas into easily<br /></h1>
             <div className='w-[80%] mt-20 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-14'>
                 <WorkProcessCard number="01" title="Creative Craze" isExtraClass />
-                <WorkProcessCard number="02" title="Brand Boost" isExtraClass />
+                <WorkProcessCard number="02" title="Brand Boost"  />
                 <WorkProcessCard number="03" title="Media Minds" isExtraClass />
-                <WorkProcessCard number="04" title="Creative Craze" isExtraClass />
+                <WorkProcessCard number="04" title="Creative Craze"  />
             </div>
         </div>
         /*  Work Process Cards */
