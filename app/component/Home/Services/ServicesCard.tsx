@@ -6,11 +6,12 @@ type Props = {
   title: string;
   description: string;
   category?: string;
+  aosDelay?: number;
 };
 
-const ServicesCard = ({ image, icon, title, description, category = 'OUR SERVICES' }: Props) => {
+const ServicesCard = ({ image, icon, title, description, category = 'OUR SERVICES', aosDelay = 0 }: Props) => {
   return (
-    <div className='group overflow-hidden rounded-lg border border-white/10 bg-[#141414] shadow-lg shadow-black/20'>
+    <div className='group overflow-hidden rounded-lg border border-white/10 bg-[#141414] shadow-lg shadow-black/20' data-aos="fade-up" data-aos-delay={aosDelay}>
       <div className='overflow-hidden'>
         <Image
           src={image}
@@ -18,6 +19,8 @@ const ServicesCard = ({ image, icon, title, description, category = 'OUR SERVICE
           width={300}
           height={179}
           className='h-[190px] w-full object-cover transition-transform duration-500 group-hover:scale-110'
+          data-aos="zoom-in"
+          data-aos-delay={aosDelay + 80}
         />
       </div>
       <div className='p-5'>

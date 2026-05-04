@@ -30,8 +30,8 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className='relative pb-20 pt-20'>
-      <div className='pointer-events-none absolute right-0 top-20 opacity-60'>
+    <section className='relative pb-20 pt-20' data-aos="fade-up">
+      <div className='pointer-events-none absolute right-0 top-20 opacity-60' data-aos="fade-left" data-aos-delay="120">
         <Image
           src="/images/service_bg.png"
           alt="Services Image"
@@ -45,13 +45,14 @@ const Services = () => {
         <p className='text-sm font-semibold uppercase tracking-[0.24em] text-[#b69974]'>WHAT WE OFFER</p>
         <h2 className='mt-4 text-3xl font-bold text-white md:text-5xl'>Premium Digital Services</h2>
         <div className='mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4'>
-          {servicesData.map((service) => (
+          {servicesData.map((service, index) => (
             <ServicesCard
               key={service.title}
               image={service.image}
               icon={service.icon}
               title={service.title}
               description={service.description}
+              aosDelay={index * 120}
             />
           ))}
         </div>

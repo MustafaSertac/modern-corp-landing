@@ -8,11 +8,13 @@ import Blog from './Blog/Blog'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
 import ScrollToTop from '../Helper/ScrollToTop/ScrollToTop'
+import AOSInit from '../Helper/AOSInit/AOSInit'
 
 
 const Home = () => {
     return (
         <div className="overflow-hidden">
+            <AOSInit/>
             <Hero/>
             <About/>
             <Services/>

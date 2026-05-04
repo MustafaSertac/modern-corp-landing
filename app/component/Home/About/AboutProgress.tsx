@@ -24,6 +24,8 @@ const AboutProgress = () => {
                 <div
                     key={item.id}
                     className='flex items-center gap-6 bg-white rounded-xl shadow-md p-6'
+                    data-aos="fade-up"
+                    data-aos-delay={index * 120}
                 >
                     <div className='bg-[#b58b58] p-5 rounded-md flex items-center justify-center'>
                         {item.icon}

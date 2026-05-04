@@ -22,13 +22,13 @@ const contactInfo = [
 
 const Contact = () => {
   return (
-    <section className='bg-[#e7e7ea] py-24'>
+    <section className='bg-[#e7e7ea] py-24' data-aos="fade-up">
       <div className='mx-auto w-[80%]'>
         <p className='text-center text-sm font-semibold uppercase tracking-[0.24em] text-[#8f734f]'>BIZE ULASIN</p>
         <h2 className='mt-4 text-center text-3xl font-bold text-[#121826] md:text-5xl'>Projenizi birlikte guclendirelim</h2>
 
         <div className='mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[2.2fr_1.1fr]'>
-          <article className='rounded-xl border border-white/10 bg-[#0b1328] p-5 shadow-[0_20px_60px_rgba(6,12,28,0.35)] md:p-7'>
+          <article className='rounded-xl border border-white/10 bg-[#0b1328] p-5 shadow-[0_20px_60px_rgba(6,12,28,0.35)] md:p-7' data-aos="fade-right" data-aos-delay="120">
             <form className='space-y-3'>
               <input
                 type='text'
@@ -60,12 +60,14 @@ const Contact = () => {
           </article>
 
           <div className='space-y-4'>
-            {contactInfo.map((item) => {
+            {contactInfo.map((item, index) => {
               const Icon = item.icon;
               return (
                 <article
                   key={item.title}
                   className='group flex items-center gap-4 rounded-xl border border-[#1e263d] bg-gradient-to-r from-[#101a33] to-[#0d1428] p-5 text-white shadow-[0_12px_30px_rgba(9,14,28,0.35)] transition-all duration-300 hover:-translate-y-1 hover:border-[#b69974]/60 hover:shadow-[0_18px_40px_rgba(9,14,28,0.45)]'
+                  data-aos="fade-left"
+                  data-aos-delay={index * 120}
                 >
                   <div className='flex h-10 w-10 items-center justify-center rounded-full bg-[#b69974] text-[#0b1328] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_22px_rgba(182,153,116,0.6)]'>
                     <Icon />

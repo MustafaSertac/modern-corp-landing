@@ -6,16 +6,19 @@ import { FiArrowDownRight } from "react-icons/fi";
 type Props = {
   image: string;
   title: string;
+  aosDelay?: number;
 };
-const BlogCard = ({ image, title }: Props) => {
+const BlogCard = ({ image, title, aosDelay = 0 }: Props) => {
   return (
-    <div className="bg-gray-100 rounded-lg overflow-hidden">
+    <div className="bg-gray-100 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay={aosDelay}>
       <Image
         src={image}
         className="w-full"
         width={300}
         height={206}
         alt={title}
+        data-aos="zoom-in"
+        data-aos-delay={aosDelay + 60}
       />
       <div className="p-6">
         <div className="flex items-center justify-between">

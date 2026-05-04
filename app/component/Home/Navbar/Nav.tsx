@@ -1,5 +1,4 @@
 import React from 'react'
-import { BiSolidBusiness } from 'react-icons/bi'
 import Logo from '../../Helper/Logo'
 import { NAVLINKS } from '@/app/contants/contants'
 import Link from 'next/link'

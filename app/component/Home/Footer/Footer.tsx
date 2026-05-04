@@ -9,9 +9,9 @@ const serviceLinks = ['UI Design', 'UX Design', 'Web App', 'Digital Marketing', 
 
 const Footer = () => {
   return (
-    <footer className='bg-[#161c2d] py-14 text-white'>
+    <footer className='bg-[#161c2d] py-14 text-white' data-aos="fade-up">
       <div className='mx-auto grid w-[85%] grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4'>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="0">
           <div className='flex items-center gap-2'>
             <div className='flex h-8 w-8 items-center justify-center rounded-full bg-[#b69974] text-[#161c2d]'>
               <span className='text-xs font-bold'>CB</span>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="120">
           <h4 className='text-lg font-semibold'>Address</h4>
           <ul className='mt-4 space-y-3 text-sm text-slate-300'>
             <li className='flex items-start gap-2'>
@@ -52,7 +52,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="240">
           <h4 className='text-lg font-semibold'>More Services</h4>
           <ul className='mt-4 space-y-2 text-sm text-slate-300'>
             {serviceLinks.map((item) => (
@@ -66,14 +66,14 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="360">
           <h4 className='text-lg font-semibold'>Newsletter</h4>
           <p className='mt-4 text-sm leading-6 text-slate-300'>
             It is a long established fact that a reader will be distracted.
           </p>
 
           <article className='mt-4 flex items-center gap-3 rounded-md bg-white/10 p-3'>
-            <Image src='/images/s1.png' alt='Newsletter' width={62} height={52} className='h-[52px] w-[62px] rounded object-cover' />
+            <Image src='/images/s1.png' alt='Newsletter' width={62} height={52} className='h-[52px] w-[62px] rounded object-cover' data-aos="zoom-in" data-aos-delay="420" />
             <div>
               <p className='text-xs text-[#d6bc99]'>25 October, 2025</p>
               <p className='mt-1 text-sm font-medium'>The standard chunk of lorem ipsum</p>
