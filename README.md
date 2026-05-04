@@ -1,9 +1,3 @@
----
-
-**Developed by:**Here is the fully translated and professionally polished version in English. I’ve updated the headings, descriptions, and instructions to match standard GitHub documentation style.
-
----
-
 # 🏢 Corporate Landing Page - Next.js 16
 
 This project is a modern, SEO-friendly, and fully responsive **Corporate Landing Page** built with **Next.js 16**. It is specifically optimized to help businesses establish a professional and high-performing digital presence.
