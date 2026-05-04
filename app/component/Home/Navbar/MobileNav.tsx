@@ -1,5 +1,5 @@
+"use client"
 import { NAVLINKS } from '@/app/contants/contants'
-import Link from 'next/link'
 import React from 'react'
 import { CgClose } from 'react-icons/cg'
   type MobileNavProps = {
@@ -15,11 +15,22 @@ const MobileNav = ({ showNav, closeNav }: MobileNavProps) => {
 
       <div className={`${navOpenStyles} transform transition-transform duration-300 z-1051 text- white top-0 fixed flex flex-col justify-center h-full w-[80%] sm:w-[60%] bg-[#9f7c4e] space-y-6`}>
         {NAVLINKS.map((link) => (
-          <Link href={link.url} key={link.id}>
+          <a
+            key={link.id}
+            href={link.url}
+            onClick={(e) => {
+              if (link.url.startsWith('#')) {
+                e.preventDefault();
+                const el = document.querySelector(link.url) as HTMLElement | null;
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                closeNav();
+              }
+            }}
+          >
             <p className="text-white w-fit text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px]">
               {link.lable}
             </p>
-          </Link>
+          </a>
         ))}
 
         <CgClose

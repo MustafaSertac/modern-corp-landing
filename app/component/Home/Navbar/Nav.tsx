@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Logo from '../../Helper/Logo'
 import { NAVLINKS } from '@/app/contants/contants'
@@ -15,11 +16,20 @@ const Nav = ({ openNav }: NavProps) => {
                 <Logo></Logo>
                 <div className='hidden h-[9vh] items-center space-x-7 bg-white pl-4 pr-2 lg:flex xl:space-x-10'>
                     {NAVLINKS.map((link) => (
-                        <Link href={link.url}
+                        <a
+                            href={link.url}
                             key={link.id}
-                            className='text-[#202020] hover:text-[#f7ab49] font-semibold transition-all duration-200'>
+                            onClick={(e) => {
+                                if (link.url.startsWith('#')) {
+                                    e.preventDefault();
+                                    const el = document.querySelector(link.url) as HTMLElement | null;
+                                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }
+                            }}
+                            className='text-[#202020] hover:text-[#f7ab49] font-semibold transition-all duration-200'
+                        >
                             <p>{link.lable}</p>
-                        </Link>
+                        </a>
                     ))}
                     <button className='h-full bg-[#f7ab49] px-3 text-sm font-bold text-white transition-colors hover:bg-[#d9973f] xl:px-4'>
                         Craete Account
