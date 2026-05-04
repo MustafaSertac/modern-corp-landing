@@ -22,7 +22,7 @@ const contactInfo = [
 
 const Contact = () => {
   return (
-    <section className='bg-[#e7e7ea] py-16 md:py-24' data-aos="fade-up">
+    <section id="contact" className='scroll-mt-24 bg-[#e7e7ea] py-16 md:py-24' data-aos="fade-up">
       <div className='mx-auto w-[90%] sm:w-[86%] lg:w-[80%]'>
         <p className='text-center text-sm font-semibold uppercase tracking-[0.24em] text-[#8f734f]'>BIZE ULASIN</p>
         <h2 className='mt-4 text-center text-3xl font-bold text-[#121826] md:text-5xl'>Projenizi birlikte guclendirelim</h2>

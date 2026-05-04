@@ -5,7 +5,7 @@ import WorkProcessCard from './WorkProcessCard'
 
 const WorkProcess = () => {
     return (
-        <div className='bg-white pb-20 pt-20 md:pb-24 md:pt-24' data-aos="fade-up">
+        <div id="work" className='scroll-mt-24 bg-white pb-20 pt-20 md:pb-24 md:pt-24' data-aos="fade-up">
             <h1 className='text-[#b69974] text-lg text-center font-medium tracking-widest'>
                 Work Process
             </h1>

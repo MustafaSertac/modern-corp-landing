@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-   <div  className="w-full h-[80vh]  bg-[#1f242c] flex flex-col justify-center">
+   <div id="home" className="w-full h-[80vh] scroll-mt-20 bg-[#1f242c] flex flex-col justify-center">
     <div className='w-[80%] mx-auto grid grid-cols-1 gap-4 items-center'>
         {/*Text Comment */}
     <div>

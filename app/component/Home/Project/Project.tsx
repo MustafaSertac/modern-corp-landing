@@ -12,7 +12,7 @@ const PROJECT_IMAGES = [
 ];
 const Project = () => {
   return (
-    <div className="bg-black pb-16 pt-16 md:pb-20 md:pt-20" data-aos="fade-up">
+    <div id="portfolio" className="scroll-mt-24 bg-black pb-16 pt-16 md:pb-20 md:pt-20" data-aos="fade-up">
       <h2 className="text-[#b69974] text-center text-lg font-medium tracking-widest">
         Portfolio
       </h2>

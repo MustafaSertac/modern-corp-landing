@@ -30,7 +30,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className='relative pb-16 pt-16 md:pb-20 md:pt-20' data-aos="fade-up">
+    <section id="services" className='relative scroll-mt-24 pb-16 pt-16 md:pb-20 md:pt-20' data-aos="fade-up">
       <div className='pointer-events-none absolute right-0 top-20 opacity-60' data-aos="fade-left" data-aos-delay="120">
         <Image
           src="/images/service_bg.png"

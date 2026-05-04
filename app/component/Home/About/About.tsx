@@ -3,7 +3,7 @@ import AboutProgress from './AboutProgress'
 
 const About = () => {
     return (
-        <div className='bg-white pb-16 pt-16 md:pb-20 md:pt-20' data-aos="fade-up">
+        <div id="about" className='scroll-mt-24 bg-white pb-16 pt-16 md:pb-20 md:pt-20' data-aos="fade-up">
                  <div data-aos="fade-up" className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6'>
                 {/*Image Content */}
                        <div className="relative flex justify-center items-center">

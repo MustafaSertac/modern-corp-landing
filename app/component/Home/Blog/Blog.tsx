@@ -3,7 +3,7 @@ import BlogCard from './BlogCard'
 
 const Blog = () => {
   return (
-    <div className='bg-white pb-16 pt-16 md:pb-20 md:pt-20' data-aos="fade-up">
+    <div id="blog" className='scroll-mt-24 bg-white pb-16 pt-16 md:pb-20 md:pt-20' data-aos="fade-up">
         <h2 className='text-[#b69974] text-center text-lg font-medium tracking-widest'>Blog</h2>
         <h1 className='mt-4 px-4 text-center text-3xl font-bold text-black md:text-5xl'>
         Latest news & articles: <br/>
