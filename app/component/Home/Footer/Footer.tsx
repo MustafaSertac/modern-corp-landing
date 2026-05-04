@@ -10,7 +10,7 @@ const serviceLinks = ['UI Design', 'UX Design', 'Web App', 'Digital Marketing', 
 const Footer = () => {
   return (
     <footer className='bg-[#161c2d] py-14 text-white' data-aos="fade-up">
-      <div className='mx-auto grid w-[85%] grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4'>
+      <div className='mx-auto grid w-[90%] grid-cols-1 gap-8 sm:w-[86%] md:grid-cols-2 lg:w-[85%] lg:grid-cols-4 lg:gap-10'>
         <div data-aos="fade-up" data-aos-delay="0">
           <div className='flex items-center gap-2'>
             <div className='flex h-8 w-8 items-center justify-center rounded-full bg-[#b69974] text-[#161c2d]'>

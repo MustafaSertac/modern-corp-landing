@@ -23,15 +23,15 @@ const AboutProgress = () => {
             {data.map((item, index) => (
                 <div
                     key={item.id}
-                    className='flex items-center gap-6 bg-white rounded-xl shadow-md p-6'
+                    className='flex flex-col gap-4 rounded-xl bg-white p-4 shadow-md sm:flex-row sm:items-center sm:gap-6 sm:p-6'
                     data-aos="fade-up"
                     data-aos-delay={index * 120}
                 >
-                    <div className='bg-[#b58b58] p-5 rounded-md flex items-center justify-center'>
+                    <div className='flex items-center justify-center rounded-md bg-[#b58b58] p-4 sm:p-5'>
                         {item.icon}
                     </div>
                     <div className='flex-1'>
-                        <div className='flex justify justify-between items-center mb-2'>
+                        <div className='mb-2 flex items-center justify-between'>
                             <h3 className='font-semibold text-gray-800 text-lg'>
                                 {item.title}
                             </h3>

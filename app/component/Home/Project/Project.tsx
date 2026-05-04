@@ -12,19 +12,19 @@ const PROJECT_IMAGES = [
 ];
 const Project = () => {
   return (
-    <div className="pt-16 pb-16 bg-black" data-aos="fade-up">
+    <div className="bg-black pb-16 pt-16 md:pb-20 md:pt-20" data-aos="fade-up">
       <h2 className="text-[#b69974] text-center text-lg font-medium tracking-widest">
         Portfolio
       </h2>
-      <h1 className="text-3xl md:text-5xl mt-4 text-white font-bold text-center">
+      <h1 className="mt-4 px-4 text-center text-3xl font-bold text-white md:text-5xl">
         Transforing ideas into <br/>
         digital reality
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-20 w-[80%] mx-auto gap-6"> 
+      <div className="mx-auto mt-12 grid w-[90%] grid-cols-1 gap-5 sm:mt-14 sm:w-[86%] sm:grid-cols-2 lg:mt-20 lg:w-[80%] lg:grid-cols-3 lg:gap-6"> 
       {PROJECT_IMAGES.map((src, index) => (
         <div key={index} className="" data-aos="zoom-in-up" data-aos-delay={index * 100}>
           <Tilt>
-    <Image src={src} alt={`Project ${index + 1}`} width={450} height={550} className="rounded-md" data-aos="zoom-in" data-aos-delay={index * 100 + 50} />
+    <Image src={src} alt={`Project ${index + 1}`} width={450} height={550} className="h-auto w-full rounded-md object-cover" data-aos="zoom-in" data-aos-delay={index * 100 + 50} />
           </Tilt>
         </div>
       ))}

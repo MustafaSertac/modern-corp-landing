@@ -22,13 +22,13 @@ const contactInfo = [
 
 const Contact = () => {
   return (
-    <section className='bg-[#e7e7ea] py-24' data-aos="fade-up">
-      <div className='mx-auto w-[80%]'>
+    <section className='bg-[#e7e7ea] py-16 md:py-24' data-aos="fade-up">
+      <div className='mx-auto w-[90%] sm:w-[86%] lg:w-[80%]'>
         <p className='text-center text-sm font-semibold uppercase tracking-[0.24em] text-[#8f734f]'>BIZE ULASIN</p>
         <h2 className='mt-4 text-center text-3xl font-bold text-[#121826] md:text-5xl'>Projenizi birlikte guclendirelim</h2>
 
-        <div className='mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[2.2fr_1.1fr]'>
-          <article className='rounded-xl border border-white/10 bg-[#0b1328] p-5 shadow-[0_20px_60px_rgba(6,12,28,0.35)] md:p-7' data-aos="fade-right" data-aos-delay="120">
+        <div className='mt-10 grid grid-cols-1 gap-5 md:mt-12 md:gap-6 lg:grid-cols-[2.2fr_1.1fr]'>
+          <article className='rounded-xl border border-white/10 bg-[#0b1328] p-4 shadow-[0_20px_60px_rgba(6,12,28,0.35)] sm:p-5 md:p-7' data-aos="fade-right" data-aos-delay="120">
             <form className='space-y-3'>
               <input
                 type='text'

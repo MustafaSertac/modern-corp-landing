@@ -10,25 +10,25 @@ type Props = {
 };
 const BlogCard = ({ image, title, aosDelay = 0 }: Props) => {
   return (
-    <div className="bg-gray-100 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay={aosDelay}>
+    <div className="overflow-hidden rounded-lg bg-gray-100" data-aos="fade-up" data-aos-delay={aosDelay}>
       <Image
         src={image}
-        className="w-full"
+        className="h-auto w-full object-cover"
         width={300}
         height={206}
         alt={title}
         data-aos="zoom-in"
         data-aos-delay={aosDelay + 60}
       />
-      <div className="p-6">
-        <div className="flex items-center justify-between">
+      <div className="p-5 sm:p-6">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center space-x-3">
             <FaRegFolder className="text-orange-700 w-6 h-6" />
             <p className="font-semibold text-gray-800 text-sm">Category</p>
           </div>
           <p className="text-gray-800 font-semibold text-sm">Jan 1, 2026</p>
         </div>
-        <h1 className="text-gray-900 font-bold text-lg mt-6 hover:text-blue-700 transition-all duration-300 cursor-pointer">
+        <h1 className="mt-5 text-lg font-bold text-gray-900 transition-all duration-300 hover:text-blue-700 cursor-pointer">
           {title}
         </h1>
         <button className="relative inline-block mt-8 cursor-pointer group">

@@ -9,11 +9,11 @@ type NavProps = {
 }
 const Nav = ({ openNav }: NavProps) => {
     return (
-        <div className="h-[12vh] relative z-10 lg:mt-8">
-            <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
+        <div className="relative z-20 h-[10vh] sm:h-[11vh] lg:h-[12vh] lg:mt-6">
+            <div className="mx-auto bg-transparent flex h-full w-[92%] items-center justify-between xl:w-[80%]">
 
                 <Logo></Logo>
-                <div className='hidden lg:flex bg-white h-[10vh] md:pl-4 items-center space-x-10 '>
+                <div className='hidden h-[9vh] items-center space-x-7 bg-white pl-4 pr-2 lg:flex xl:space-x-10'>
                     {NAVLINKS.map((link) => (
                         <Link href={link.url}
                             key={link.id}
@@ -21,7 +21,9 @@ const Nav = ({ openNav }: NavProps) => {
                             <p>{link.lable}</p>
                         </Link>
                     ))}
-                    <button className='h-full p-3 bg-[#f7ab49] cursor-pointer text-white font-bold'>Craete Account</button>
+                    <button className='h-full bg-[#f7ab49] px-3 text-sm font-bold text-white transition-colors hover:bg-[#d9973f] xl:px-4'>
+                        Craete Account
+                    </button>
 
 
                 </div>
@@ -29,7 +31,7 @@ const Nav = ({ openNav }: NavProps) => {
                     
                     openNav()
                 }} className='lg:hidden'>
-                    <HiBars3BottomRight className='w-9 h-9 text-[#dfc39f] cursor-pointer'></HiBars3BottomRight>
+                    <HiBars3BottomRight className='h-8 w-8 cursor-pointer text-[#dfc39f] sm:h-9 sm:w-9'></HiBars3BottomRight>
                 </div>
             </div>
         </div>

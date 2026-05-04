@@ -23,13 +23,13 @@ const ServicesCard = ({ image, icon, title, description, category = 'OUR SERVICE
           data-aos-delay={aosDelay + 80}
         />
       </div>
-      <div className='p-5'>
-        <div className='relative z-10 ml-auto -mt-14 flex h-20 w-20 items-center justify-center rounded-lg bg-[#b69974] transition-all duration-300 group-hover:bg-black group-hover:shadow-[0_0_30px_rgba(182,153,116,0.45)]'>
-          <Image src={icon} alt={`${title} icon`} width={52} height={52} />
+      <div className='p-4 sm:p-5'>
+        <div className='relative z-10 ml-auto -mt-12 flex h-16 w-16 items-center justify-center rounded-lg bg-[#b69974] transition-all duration-300 group-hover:bg-black group-hover:shadow-[0_0_30px_rgba(182,153,116,0.45)] sm:-mt-14 sm:h-20 sm:w-20'>
+          <Image src={icon} alt={`${title} icon`} width={52} height={52} className='h-9 w-9 sm:h-13 sm:w-13' />
         </div>
         <div className='mt-6 h-px w-16 bg-white/20'></div>
         <p className='mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-400'>{category}</p>
-        <h3 className='mt-2 text-xl font-semibold text-white'>{title}</h3>
+        <h3 className='mt-2 text-lg font-semibold text-white sm:text-xl'>{title}</h3>
         <p className='mb-2 mt-3 text-sm leading-7 text-slate-400'>{description}</p>
       </div>
     </div>
