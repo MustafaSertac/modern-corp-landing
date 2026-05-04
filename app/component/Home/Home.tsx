@@ -13,7 +13,7 @@ import AOSInit from '../Helper/AOSInit/AOSInit'
 
 const Home = () => {
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden bg-[#1f242c]">
             <AOSInit/>
             <Hero/>
             <About/>

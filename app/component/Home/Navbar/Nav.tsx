@@ -10,11 +10,11 @@ type NavProps = {
 }
 const Nav = ({ openNav }: NavProps) => {
     return (
-        <div className="relative z-20 h-[10vh] sm:h-[11vh] lg:h-[12vh] lg:mt-6">
+        <div className="relative z-20 h-[10vh] sm:h-[11vh] lg:h-[12vh] lg:mt-6 bg-[#1f242c]">
             <div className="mx-auto bg-transparent flex h-full w-[92%] items-center justify-between xl:w-[80%]">
 
                 <Logo></Logo>
-                <div className='hidden h-[9vh] items-center space-x-7 bg-white pl-4 pr-2 lg:flex xl:space-x-10'>
+                <div className='hidden bg-white h-full items-center space-x-7 pl-4 lg:flex xl:space-x-10'>
                     {NAVLINKS.map((link) => (
                         <a
                             href={link.url}

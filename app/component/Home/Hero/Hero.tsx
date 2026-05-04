@@ -13,7 +13,7 @@ const Hero = () => {
         </h1>
     </div>
     {/*Description */}
-       <p  data-aos="fade-up" data-aos-delay="180" className='max-w-150 ml-0 md:ml-12 md:mt-10 mt-5 text-sm md:text-base font-semibold'>
+       <p  data-aos="fade-up" data-aos-delay="180" className='text-white max-w-150 ml-0 md:ml-12 md:mt-10 mt-5 text-m md:text-base font-semibold'>
         Payment solutions enable businesses to accept payments 
         Payment solutions enable businesses to accept payments from customers
          conveniently securely from customers conveniently and securely.

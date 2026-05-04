@@ -10,7 +10,7 @@ const [showNav, setShowNav] = useState<boolean>(false);
   const closeNavHandler = (): void => setShowNav(false);
   
   return (
-    <div>
+    <div className='bg-[#1f242c]'>
     <Nav openNav={openNavHandler}></Nav>
     <MobileNav showNav={showNav} closeNav={closeNavHandler}></MobileNav>
     
